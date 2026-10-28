@@ -1,0 +1,21 @@
+// Non-modular or client styles for .l-header region.
+
+header{
+	position: absolute;
+	top: 1rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 10;
+}
+
+#block-amazonas-acai-main-menu{
+	.menu{
+		a{
+			color: white;
+			&:hover{
+				color: #ffd700;
+			}
+		}
+	}
+}

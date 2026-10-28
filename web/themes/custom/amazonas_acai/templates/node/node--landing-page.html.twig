@@ -1,0 +1,7 @@
+{% extends "node.html.twig" %}
+
+{% block content %}
+  {% for section in content.field_sections %}
+    {{ section }}
+  {% endfor %}
+{% endblock %}

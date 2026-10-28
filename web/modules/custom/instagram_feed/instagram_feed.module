@@ -1,0 +1,10 @@
+<?php
+
+function instagram_feed_theme() {
+  return [
+    'instagram_feed' => [
+      'variables' => ['items' => NULL],
+      'template' => 'instagram-feed',
+    ],
+  ];
+}

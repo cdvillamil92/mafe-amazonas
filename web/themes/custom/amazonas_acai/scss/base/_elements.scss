@@ -1,0 +1,105 @@
+// Elements
+//
+// Things to review before you write code here:
+// - Be sure to load after "foundation" import.
+// - Also, before adding styles be sure to modify variables in the
+//   "base/_common.scss" file. You may not need to write any code.
+
+// Headings
+//------------------------------------------
+// h1, h2, h3,
+// h4, h5, h6 {}
+
+// Anchors
+//-----------------------------------------------------------------------------
+// a {}
+
+// a:focus {}
+
+// a.active,
+// a:active,
+// a:hover {}
+
+// Form Input
+//-----------------------------------------------------------------------------
+// input[type="text"],
+// input[type="password"],
+// input[type="date"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="month"],
+// input[type="week"],
+// input[type="email"],
+// input[type="number"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="time"],
+// input[type="url"],
+// textarea {
+// }
+
+// input[type="text"],
+// input[type="password"],
+// input[type="date"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="month"],
+// input[type="week"],
+// input[type="email"],
+// input[type="number"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="time"],
+// input[type="url"],
+// textarea {
+
+// }
+
+// select {}
+
+h1, h2, h3 {
+  font-family: 'Staatliches', sans-serif;
+  color: $primary-color;
+  letter-spacing: 1px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.flex{
+  display: flex;
+}
+
+p{
+  font-size: 16px;
+}
+
+.field--paragraph-field-cta {
+  text-align: center;
+  a{
+    display: inline-block;
+    min-width: 140px;
+    padding: 10px 24px;
+    background: $secondary-color;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    &:hover {
+      background: darken($primary-color, 10%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,4 @@
+services:
+  instagram_feed.service:
+    class: Drupal\instagram_feed\Service\InstagramService
+    arguments: ['@http_client', '@cache.default']

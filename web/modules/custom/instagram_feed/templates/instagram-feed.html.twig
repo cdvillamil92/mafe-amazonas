@@ -1,0 +1,11 @@
+<div class="instagram-feed">
+  <h3>Síguenos en Instagram</h3>
+
+  <div class="instagram-grid">
+    {% for item in items %}
+      <a href="{{ item.permalink }}" target="_blank">
+        <img src="{{ item.media_url }}" alt="Instagram post" loading="lazy">
+      </a>
+    {% endfor %}
+  </div>
+</div>

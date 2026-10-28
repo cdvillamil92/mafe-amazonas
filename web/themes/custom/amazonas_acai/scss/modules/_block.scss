@@ -1,0 +1,251 @@
+body.toolbar-fixed .header {
+  top: 40px;
+}
+
+body.toolbar-tray-open.toolbar-horizontal .header {
+  top: 80px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $primary-color;
+  transition: all 0.4s ease;
+  padding: 20px 0;
+	
+	.grid-x {
+	  margin: 0 auto;
+	  justify-content: space-between;
+	}
+
+	#block-amazonas-acai-main-menu {
+		.menu {
+			a{
+			  margin-left: 20px;
+			  transition: all 0.3s ease;
+			  &:after{
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: -5px;
+					width: 0%;
+					height: 2px;
+					background: white;
+					transition: width 0.3s ease;
+			  }
+		    &:hover {
+		    	color: #d1a3ff;
+		      transform: translateY(-2px);
+		      &:after{
+		      	width: 100%;
+		      }
+		    }
+			}
+		}
+	}
+}
+
+#block-amazonas-acai-views-block-slider-home-block-1{
+	width: 100%;
+	height: 80vh;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	.slick-slide{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			inset: 0;
+			background: rgba(0,0,0,0.3);
+		}
+	}
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.two-columns {
+	.grid-x{
+		h2 {
+		  font-size: 38px;
+		  margin-bottom: 15px;
+		}
+	 	img{
+		  width: 100%;
+		  height: 420px;
+		  object-fit: cover;
+		  border-radius: 12px;
+	 	}
+		p {
+		  line-height: 1.6;
+		  margin-bottom: 15px;
+		}
+ 	}
+ 	&.reverse {
+ 		.grid-x{
+ 			flex-direction: row-reverse;
+ 		}
+ 	}
+}
+
+.cards {
+	.card-custom {
+		background: #fff;
+	  border-radius: 16px;
+	  padding-bottom: 24px;
+	  height: 100%;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+	  transition: all 0.3s ease;
+		&:hover {
+		  transform: translateY(-5px);
+		}
+	}
+
+	.card-image {
+		position: relative;
+		height: 220px;
+		overflow: hidden;
+		border-radius: 12px;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: transform 0.4s ease;
+		}
+	}
+
+	.card-body h3 {
+	  color: #663366;
+	  margin-bottom: 12px;
+	}
+
+	.card-text {
+	  font-size: 14px;
+	  color: #555;
+	  margin-bottom: 20px;
+	}
+}
+
+.hero-banner {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: clamp(500px, 90vh, 700px);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+	.hero-banner-bg {
+	  position: absolute;
+	  inset: 0;
+	}
+	.hero-banner-overlay {
+	  position: absolute;
+	  inset: 0;
+	  background: rgba(0, 0, 0, 0.45);
+	}
+  .grid-x{
+  	justify-content: flex-end;
+  }
+	.hero-banner-content {
+	  position: relative;
+	  z-index: 2;
+	  color: #fff;
+
+	  h1{
+	  	color: white;
+	  }
+	  p {
+	    margin-bottom: 2rem;
+	    opacity: 0.9;
+	  }
+	  .field--paragraph-field-cta{
+	  	text-align: left;
+	  }
+	}
+}
+
+.instagram-feed{
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: $primary-color;
+  h3{
+  	color: white;
+  }
+  .field--paragraph-field-text{
+  	height: 540px;
+  	overflow: hidden;
+  }
+}
+
+footer{
+	padding: 50px 20px;
+  background: $primary-color;
+	.grid-x {
+	  margin: 0 auto;
+	  justify-content: space-between;
+	}
+	#block-amazonas-acai-piedepagina{
+		.menu{
+			flex-direction: column;
+			li {
+				margin-bottom: 4px;
+				a{
+					color: white;
+					font-size: 15px;
+					padding: 5px;
+				  transition: all 0.3s ease;
+
+				  &:after{
+						content: "";
+						position: absolute;
+						left: 0;
+						bottom: -5px;
+						width: 0%;
+						height: 2px;
+						background: white;
+						transition: width 0.3s ease;
+				  }
+			    &:hover {
+			    	color: #d1a3ff;
+			      transform: translateY(-2px);
+			      &:after{
+			      	width: 100%;
+			      }
+			    }
+				}
+			}
+		}
+	}
+
+	#block-amazonas-acai-socialmediaplatformlinks {
+		.social-media-platforms__container{
+			display: flex;
+			gap: 8px;
+			a{
+				font-size: 2.5rem;
+				display: block;
+				color: #fff;
+				transition: all 0.3s ease;
+				margin: 0 0 4px 0;
+				&:hover{
+					color: #d1a3ff;
+				}
+			}
+		}
+	}
+}

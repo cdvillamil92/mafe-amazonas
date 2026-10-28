@@ -1,0 +1,5 @@
+name: Instagram Feed
+type: module
+description: Shows Instagram feed
+core_version_requirement: ^11
+package: Custom

@@ -1,0 +1,19 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/amazonas_acai.css: {}
+  js:
+    js/amazonas_acai.js: { }
+    js/foundation.min.js: {minified: true}
+    js/foundation_init.js: {}
+    js/motion-ui.min.js: {minified: true}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
+    
+global-fonts:
+ css:
+   theme:
+     https://fonts.googleapis.com/css2?family=Staatliches&display=swap: { type: external }
